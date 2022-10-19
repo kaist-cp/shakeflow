@@ -1,0 +1,22 @@
+/target
+Cargo.lock
+/build
+/core
+/corundum
+.pytest_cache
+/scripts/.temp
+/scripts/corundum-original
+/archive.zip
+__pycache__/
+
+*.fst
+results.xml
+iverilog_dump.v
+sim_build/
+
+# virtualenv
+shakeflow/shakeflow/
+
+# vscode
+.metals
+.vscode

@@ -1,0 +1,18 @@
+[package]
+name = "shakeflow"
+version = "0.1.0"
+authors = [] # anonymized for reviews
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+arrayvec = "0.7.2"
+thiserror = "1.0.36"
+itertools = "0.10.5"
+static_assertions = "1.1.0"
+hashcons = "0.1.2"
+linked-hash-map = "0.5.6"
+tuple-utils = { git = "https://github.com/minseongg/tuple-utils.git" }
+shakeflow-macro = { path = "../shakeflow-macro/" }
+paste = "1.0.9"

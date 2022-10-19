@@ -1,0 +1,12 @@
+max_width = 120
+use_small_heuristics = "Max"
+group_imports = "StdExternalCrate"
+imports_granularity = "Module"
+condense_wildcard_suffixes = true
+fn_args_layout = "Compressed"
+fn_single_line = true
+overflow_delimited_expr = true
+reorder_impl_items = true
+use_field_init_shorthand = true
+use_try_shorthand = true
+where_single_line = true

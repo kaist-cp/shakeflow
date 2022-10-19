@@ -1,0 +1,104 @@
+blocksize 4K depth 1,
+516936705
+   bw (  KiB/s): min=58352, max=59544, per=99.98%, avg=59112.56, stdev=194.20, samples=59
+   iops        : min=14588, max=14886, avg=14778.10, stdev=48.57, samples=59
+blocksize 4K depth 2,
+512344064
+   bw (  KiB/s): min=117301, max=120440, per=99.98%, avg=119337.95, stdev=756.24, samples=59
+   iops        : min=29325, max=30110, avg=29834.46, stdev=189.10, samples=59
+blocksize 4K depth 4,
+506412359
+   bw (  KiB/s): min=231288, max=235816, per=99.98%, avg=234867.05, stdev=1137.07, samples=59
+   iops        : min=57822, max=58954, avg=58716.75, stdev=284.29, samples=59
+blocksize 4K depth 8,
+529006200
+   bw (  KiB/s): min=469237, max=473096, per=99.99%, avg=471769.39, stdev=761.35, samples=59
+   iops        : min=117309, max=118274, avg=117942.32, stdev=190.38, samples=59
+blocksize 4K depth 16,
+498565203
+   bw (  KiB/s): min=873648, max=878760, per=100.00%, avg=876535.19, stdev=1190.60, samples=59
+   iops        : min=218412, max=219690, avg=219133.78, stdev=297.63, samples=59
+blocksize 4K depth 32,
+482557954
+   bw (  MiB/s): min= 1394, max= 1427, per=99.98%, avg=1422.22, stdev= 5.00, samples=59
+   iops        : min=356966, max=365366, avg=364088.15, stdev=1278.90, samples=59
+blocksize 4K depth 64,
+489784985
+   bw (  MiB/s): min= 1446, max= 1499, per=99.99%, avg=1492.37, stdev= 8.24, samples=59
+   iops        : min=370310, max=383930, avg=382047.59, stdev=2108.43, samples=59
+blocksize 4K depth 128,
+468782512
+   bw (  MiB/s): min= 1468, max= 1502, per=99.99%, avg=1496.99, stdev= 6.62, samples=59
+   iops        : min=375844, max=384526, avg=383229.81, stdev=1694.43, samples=59
+blocksize 4K depth 256,
+1116008719
+   bw (  MiB/s): min= 1489, max= 1501, per=99.99%, avg=1494.28, stdev= 2.79, samples=59
+   iops        : min=381273, max=384470, avg=382534.80, stdev=714.84, samples=59
+blocksize 4K depth 512,
+544854888
+   bw (  MiB/s): min= 1463, max= 1484, per=99.99%, avg=1475.55, stdev= 3.74, samples=59
+   iops        : min=374578, max=380054, avg=377741.46, stdev=958.17, samples=59
+blocksize 4K depth 1024,
+694378825
+   bw (  MiB/s): min= 1453, max= 1488, per=99.98%, avg=1481.71, stdev= 6.13, samples=60
+   iops        : min=371978, max=381152, avg=379317.05, stdev=1568.03, samples=60
+blocksize 4K depth 2048,
+508150232
+   bw (  MiB/s): min= 1395, max= 1485, per=100.00%, avg=1475.74, stdev=13.22, samples=59
+   iops        : min=357196, max=380246, avg=377790.47, stdev=3383.27, samples=59
+blocksize 4K depth 4096,
+457700821
+   bw (  MiB/s): min= 1477, max= 1490, per=99.96%, avg=1484.10, stdev= 3.37, samples=59
+   iops        : min=378128, max=381604, avg=379929.97, stdev=862.02, samples=59
+blocksize 256K depth 1,
+1107218417
+   bw (  MiB/s): min= 1473, max= 1503, per=99.99%, avg=1494.40, stdev= 5.77, samples=59
+   iops        : min= 5894, max= 6012, avg=5977.59, stdev=23.06, samples=59
+blocksize 256K depth 2,
+488211802
+   bw (  MiB/s): min= 2704, max= 2771, per=100.00%, avg=2752.24, stdev=14.86, samples=55
+   iops        : min=10816, max=11086, avg=11008.95, stdev=59.39, samples=55
+blocksize 256K depth 4,
+315602842
+   bw (  MiB/s): min= 4249, max= 4315, per=100.00%, avg=4288.54, stdev=19.99, samples=21
+   iops        : min=16996, max=17261, avg=17154.14, stdev=79.93, samples=21
+blocksize 256K depth 8,
+249930800
+   bw (  MiB/s): min= 5396, max= 5445, per=100.00%, avg=5417.62, stdev=18.34, samples=8
+   iops        : min=21584, max=21780, avg=21670.50, stdev=73.37, samples=8
+blocksize 256K depth 16,
+249288068
+   bw (  MiB/s): min= 5641, max= 5688, per=100.00%, avg=5663.42, stdev=15.14, samples=6
+   iops        : min=22566, max=22752, avg=22653.67, stdev=60.58, samples=6
+blocksize 256K depth 32,
+246770551
+   bw (  MiB/s): min= 5656, max= 5678, per=100.00%, avg=5668.86, stdev= 7.29, samples=6
+   iops        : min=22626, max=22714, avg=22675.33, stdev=29.17, samples=6
+blocksize 256K depth 64,
+269380475
+   bw (  MiB/s): min= 5642, max= 5684, per=100.00%, avg=5664.04, stdev=17.80, samples=6
+   iops        : min=22570, max=22736, avg=22656.00, stdev=71.41, samples=6
+blocksize 256K depth 128,
+295040495
+   bw (  MiB/s): min= 5647, max= 5684, per=100.00%, avg=5665.20, stdev=15.96, samples=6
+   iops        : min=22590, max=22738, avg=22660.67, stdev=64.00, samples=6
+blocksize 256K depth 256,
+242678438
+   bw (  MiB/s): min= 5651, max= 5687, per=100.00%, avg=5669.03, stdev=16.32, samples=6
+   iops        : min=22604, max=22750, avg=22676.00, stdev=65.46, samples=6
+blocksize 256K depth 512,
+265919238
+   bw (  MiB/s): min= 5635, max= 5696, per=100.00%, avg=5665.58, stdev=20.69, samples=6
+   iops        : min=22542, max=22786, avg=22662.33, stdev=82.75, samples=6
+blocksize 256K depth 1024,
+237522545
+   bw (  MiB/s): min= 5633, max= 5686, per=100.00%, avg=5664.58, stdev=18.70, samples=6
+   iops        : min=22534, max=22746, avg=22658.33, stdev=74.81, samples=6
+blocksize 256K depth 2048,
+260387045
+   bw (  MiB/s): min= 5653, max= 5683, per=98.68%, avg=5667.37, stdev=11.99, samples=6
+   iops        : min=22612, max=22734, avg=22669.33, stdev=48.16, samples=6
+blocksize 256K depth 4096,
+234624379
+   bw (  MiB/s): min= 5653, max= 5685, per=96.02%, avg=5667.37, stdev=13.19, samples=6
+   iops        : min=22614, max=22742, avg=22669.33, stdev=52.91, samples=6

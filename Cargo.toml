@@ -1,0 +1,10 @@
+[workspace]
+members = [
+  "shakeflow",
+  "shakeflow-macro",
+  "shakeflow-std",
+  "shakeflow-bsg",
+  "shakeflow-corundum",
+  "shakeflow-examples",
+]
+resolver = "2"

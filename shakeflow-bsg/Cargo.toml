@@ -1,0 +1,13 @@
+[package]
+name = "shakeflow-bsg"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+arrayvec = "0.7.2"
+shakeflow = { path = "../shakeflow" }
+shakeflow-std = { path = "../shakeflow-std" }
+paste = "1.0.9"
+static_assertions = "1.1.0"

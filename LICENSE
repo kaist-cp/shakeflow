@@ -1,0 +1,32 @@
+All files in this distribution are part of ShakeFlow.
+
+ShakeFlow is distributed under the terms of the Apache License 2.0.
+A copy of the Apache License 2.0 is included in /LICENSE-APACHE2.
+
+----------------------------------------------------------------------
+
+The following files in this distribution are taken from the Corundum
+project, https://github.com/corundum/corundum:
+
+  all files in the /scripts/common/ directory
+  all files in the /scripts/fpga/ directory
+  all files in the /scripts/rtl/ directory
+  all files in the /scripts/tb/ directory
+
+The files from the Corundum project are Copyright 2019 The Regents of
+the University of California and distributed under the terms of the BSD
+2-Clause License. A copy of the BSD 2-Clause License is included in
+/LICENSE-BSD2.
+
+----------------------------------------------------------------------
+
+The following files in this distribution are taken from the Autonomous
+NIC offloads ASPLOS'21 Artifact Evaluation,
+https://github.com/BorisPis/autonomous-asplos21-artifact:
+
+  all files in the /scripts/nginx/ directory
+  /scripts/custom.fio
+
+The files from the Autonomous NIC offloads ASPLOS'21 Artifact Evaluation
+are Copyright 2020 Boris Pismenny and distributed under the terms of the
+MIT License. A copy of the MIT License is included in /LICENSE-MIT.
