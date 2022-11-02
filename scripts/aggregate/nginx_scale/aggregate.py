@@ -14,7 +14,7 @@ SF = "$\\mathbf{C_{SF}}$"
 MEL = "$\\mathbf{M}$"
 
 current_dir = pathlib.Path(f'{os.path.dirname(os.path.abspath(__file__))}')
-pathlist = list(pathlib.Path(f'{current_dir}/../../csvs/nginx_scale/').glob('*.csv'))
+pathlist = list(pathlib.Path(f'{current_dir}/../../csvs/nginx_scale').glob('*.csv'))
 
 cor = [[] for _ in range(12)]
 sf = [[] for _ in range(12)]
@@ -72,19 +72,19 @@ with open(pathlib.Path(f'{current_dir}/scale.csv'), 'w') as f:
             f.write(f'{64*(1 << i)}\t{MEL}\t{b}\n')
         
 
-l1 = []
-l2 = []
-l3 = []
-l4 = []
-for i in range(12):
-    c = cor[i]
-    s = sf[i]
-    m = mel[i]
-    x = np.average(s)/ np.average(c) - 1
-    l1.append(x)
-    l2.append((np.average(s)- np.average(c)) / np.std(c))
-    l3.append((np.average(s)- np.average(c)) / np.std(s))
-    l4.append((np.average(m)/ np.average(s)) - 1)
+# l1 = []
+# l2 = []
+# l3 = []
+# l4 = []
+# for i in range(12):
+#     c = cor[i]
+#     s = sf[i]
+#     m = mel[i]
+#     x = np.average(s)/ np.average(c) - 1
+#     l1.append(x)
+#     l2.append((np.average(s)- np.average(c)) / np.std(c))
+#     l3.append((np.average(s)- np.average(c)) / np.std(s))
+#     l4.append((np.average(m)/ np.average(s)) - 1)
 
-print(np.average(cor[11])/ np.average(cor[0]) - 1)
-print(np.average(sf[11])/ np.average(sf[0]) - 1)
+# print(np.average(cor[11])/ np.average(cor[0]) - 1)
+# print(np.average(sf[11])/ np.average(sf[0]) - 1)

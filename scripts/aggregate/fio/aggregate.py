@@ -17,7 +17,7 @@ for di in ['rx', 'tx']:
     current_dir = pathlib.Path(f'{os.path.dirname(os.path.abspath(__file__))}')
     corlist = list(pathlib.Path(f'{current_dir}/../../csvs/fio/{di}').glob('*corig*.csv'))
     sflist = list(pathlib.Path(f'{current_dir}/../../csvs/fio/{di}').glob('*csf*.csv'))
-    mellist = list(pathlib.Path(f'{current_dir}/../../csvs/fio/rx').glob('*mel*.csv'))
+    mellist = list(pathlib.Path(f'{current_dir}/../../csvs/fio/rx').glob('*m*.csv'))
     corlist.extend(sflist)
     corlist.extend(mellist)
     pathlist = corlist

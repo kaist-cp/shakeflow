@@ -1,0 +1,684 @@
+conns 64 cores 8 fsize 262144,
+thread 1 created
+thread 2 created
+thread 3 created
+thread 4 created
+thread 5 created
+thread 6 created
+thread 7 created
+thread 8 created
+thread 9 created
+thread 10 created
+thread 11 created
+thread 12 created
+thread 13 created
+thread 14 created
+thread 15 created
+thread 16 created
+Running 1m test @ https://10.107.41.2
+  16 threads and 128 connections
+Ready 0/16
+Ready 6/16
+Ready 4/16
+Ready 9/16
+Ready 15/16
+Ready 7/16
+Ready 3/16
+Ready 11/16
+Ready 2/16
+Ready 5/16
+Ready 1/16
+Ready 13/16
+Ready 14/16
+Ready 8/16
+Ready 10/16
+Ready 12/16
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    17.61ms   78.55ms   1.06s    98.37%
+    Req/Sec     1.16k   561.14     4.23k    69.31%
+  1259954 requests in 1.17m, 307.91GB read
+Requests/sec:  17977.11
+Transfer/sec:      4.39GB
+conns 128 cores 8 fsize 262144,
+thread 1 created
+thread 2 created
+thread 3 created
+thread 4 created
+thread 5 created
+thread 6 created
+thread 7 created
+thread 8 created
+thread 9 created
+thread 10 created
+thread 11 created
+thread 12 created
+thread 13 created
+thread 14 created
+thread 15 created
+thread 16 created
+Running 1m test @ https://10.107.41.2
+  16 threads and 128 connections
+Ready 3/16
+Ready 15/16
+Ready 13/16
+Ready 6/16
+Ready 2/16
+Ready 10/16
+Ready 1/16
+Ready 8/16
+Ready 0/16
+Ready 9/16
+Ready 5/16
+Ready 12/16
+Ready 14/16
+Ready 11/16
+Ready 4/16
+Ready 7/16
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    17.18ms   64.78ms   1.08s    98.81%
+    Req/Sec     1.12k   628.85     4.46k    67.30%
+  1213002 requests in 1.18m, 296.44GB read
+Requests/sec:  17108.35
+Transfer/sec:      4.18GB
+conns 256 cores 8 fsize 262144,
+thread 1 created
+thread 2 created
+thread 3 created
+thread 4 created
+thread 5 created
+thread 6 created
+thread 7 created
+thread 8 created
+thread 9 created
+thread 10 created
+thread 11 created
+thread 12 created
+thread 13 created
+thread 14 created
+thread 15 created
+thread 16 created
+Running 1m test @ https://10.107.41.2
+  16 threads and 128 connections
+Ready 9/16
+Ready 5/16
+Ready 12/16
+Ready 14/16
+Ready 1/16
+Ready 3/16
+Ready 2/16
+Ready 8/16
+Ready 0/16
+Ready 6/16
+Ready 11/16
+Ready 10/16
+Ready 4/16
+Ready 7/16
+Ready 15/16
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready 13/16
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    18.24ms   75.98ms   1.10s    98.48%
+    Req/Sec     1.15k   605.91     4.34k    68.58%
+  1246201 requests in 1.18m, 304.55GB read
+Requests/sec:  17582.20
+Transfer/sec:      4.30GB
+conns 512 cores 8 fsize 262144,
+thread 1 created
+thread 2 created
+thread 3 created
+thread 4 created
+thread 5 created
+thread 6 created
+thread 7 created
+thread 8 created
+thread 9 created
+thread 10 created
+thread 11 created
+thread 12 created
+thread 13 created
+thread 14 created
+thread 15 created
+thread 16 created
+Running 1m test @ https://10.107.41.2
+  16 threads and 128 connections
+Ready 7/16
+Ready 4/16
+Ready 3/16
+Ready 12/16
+Ready 10/16
+Ready 5/16
+Ready 1/16
+Ready 11/16
+Ready 14/16
+Ready 13/16
+Ready 9/16
+Ready 2/16
+Ready 8/16
+Ready 6/16
+Ready 0/16
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready 15/16
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    18.57ms   79.39ms   1.06s    98.33%
+    Req/Sec     1.15k   587.41     4.36k    69.14%
+  1234417 requests in 1.17m, 301.67GB read
+Requests/sec:  17535.62
+Transfer/sec:      4.29GB
+conns 1024 cores 8 fsize 262144,
+thread 1 created
+thread 2 created
+thread 3 created
+thread 4 created
+thread 5 created
+thread 6 created
+thread 7 created
+thread 8 created
+thread 9 created
+thread 10 created
+thread 11 created
+thread 12 created
+thread 13 created
+thread 14 created
+thread 15 created
+thread 16 created
+Running 1m test @ https://10.107.41.2
+  16 threads and 128 connections
+Ready 5/16
+Ready 6/16
+Ready 10/16
+Ready 4/16
+Ready 13/16
+Ready 11/16
+Ready 15/16
+Ready 7/16
+Ready 9/16
+Ready 8/16
+Ready 2/16
+Ready 1/16
+Ready 14/16
+Ready 3/16
+Ready 12/16
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready 0/16
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    18.44ms   77.08ms   1.08s    98.45%
+    Req/Sec     1.15k   599.66     4.10k    67.71%
+  1250606 requests in 1.17m, 305.63GB read
+Requests/sec:  17840.63
+Transfer/sec:      4.36GB
+conns 2048 cores 8 fsize 262144,
+thread 1 created
+thread 2 created
+thread 3 created
+thread 4 created
+thread 5 created
+thread 6 created
+thread 7 created
+thread 8 created
+thread 9 created
+thread 10 created
+thread 11 created
+thread 12 created
+thread 13 created
+thread 14 created
+thread 15 created
+thread 16 created
+Running 1m test @ https://10.107.41.2
+  16 threads and 128 connections
+Ready 14/16
+Ready 4/16
+Ready 12/16
+Ready 11/16
+Ready 0/16
+Ready 7/16
+Ready 5/16
+Ready 1/16
+Ready 13/16
+Ready 3/16
+Ready 2/16
+Ready 9/16
+Ready 6/16
+Ready 8/16
+Ready 15/16
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready 10/16
+Ready all
+Ready all
+Ready all
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    18.22ms   75.59ms   1.09s    98.50%
+    Req/Sec     1.15k   616.36     3.86k    68.28%
+  1250192 requests in 1.18m, 305.53GB read
+Requests/sec:  17586.32
+Transfer/sec:      4.30GB
+conns 4096 cores 8 fsize 262144,
+thread 1 created
+thread 2 created
+thread 3 created
+thread 4 created
+thread 5 created
+thread 6 created
+thread 7 created
+thread 8 created
+thread 9 created
+thread 10 created
+thread 11 created
+thread 12 created
+thread 13 created
+thread 14 created
+thread 15 created
+thread 16 created
+Running 1m test @ https://10.107.41.2
+  16 threads and 128 connections
+Ready 3/16
+Ready 11/16
+Ready 14/16
+Ready 1/16
+Ready 9/16
+Ready 13/16
+Ready 5/16
+Ready 4/16
+Ready 10/16
+Ready 0/16
+Ready 2/16
+Ready 7/16
+Ready 12/16
+Ready 15/16
+Ready 8/16
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready 6/16
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    18.48ms   80.14ms   1.07s    98.32%
+    Req/Sec     1.15k   595.01     4.14k    68.30%
+  1248666 requests in 1.17m, 305.16GB read
+Requests/sec:  17714.32
+Transfer/sec:      4.33GB
+conns 8192 cores 8 fsize 262144,
+thread 1 created
+thread 2 created
+thread 3 created
+thread 4 created
+thread 5 created
+thread 6 created
+thread 7 created
+thread 8 created
+thread 9 created
+thread 10 created
+thread 11 created
+thread 12 created
+thread 13 created
+thread 14 created
+thread 15 created
+thread 16 created
+Running 1m test @ https://10.107.41.2
+  16 threads and 128 connections
+Ready 5/16
+Ready 3/16
+Ready 10/16
+Ready 12/16
+Ready 13/16
+Ready 1/16
+Ready 8/16
+Ready 14/16
+Ready 0/16
+Ready 2/16
+Ready 7/16
+Ready 6/16
+Ready 4/16
+Ready 11/16
+Ready 9/16
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready 15/16
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    16.69ms   74.10ms   1.06s    98.54%
+    Req/Sec     1.15k   576.14     4.41k    66.78%
+  1251814 requests in 1.17m, 305.92GB read
+Requests/sec:  17857.69
+Transfer/sec:      4.36GB
+conns 16384 cores 8 fsize 262144,
+thread 1 created
+thread 2 created
+thread 3 created
+thread 4 created
+thread 5 created
+thread 6 created
+thread 7 created
+thread 8 created
+thread 9 created
+thread 10 created
+thread 11 created
+thread 12 created
+thread 13 created
+thread 14 created
+thread 15 created
+thread 16 created
+Running 1m test @ https://10.107.41.2
+  16 threads and 128 connections
+Ready 12/16
+Ready 14/16
+Ready 4/16
+Ready 5/16
+Ready 10/16
+Ready 6/16
+Ready 3/16
+Ready 9/16
+Ready 13/16
+Ready 2/16
+Ready 8/16
+Ready 0/16
+Ready 15/16
+Ready 1/16
+Ready 7/16
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready 11/16
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    19.28ms   80.69ms   1.08s    98.31%
+    Req/Sec     1.16k   599.71     4.25k    67.34%
+  1255948 requests in 1.18m, 306.93GB read
+Requests/sec:  17782.76
+Transfer/sec:      4.35GB
+conns 32768 cores 8 fsize 262144,
+thread 1 created
+thread 2 created
+thread 3 created
+thread 4 created
+thread 5 created
+thread 6 created
+thread 7 created
+thread 8 created
+thread 9 created
+thread 10 created
+thread 11 created
+thread 12 created
+thread 13 created
+thread 14 created
+thread 15 created
+thread 16 created
+Running 1m test @ https://10.107.41.2
+  16 threads and 128 connections
+Ready 14/16
+Ready 3/16
+Ready 0/16
+Ready 2/16
+Ready 1/16
+Ready 15/16
+Ready 9/16
+Ready 7/16
+Ready 5/16
+Ready 8/16
+Ready 11/16
+Ready 13/16
+Ready 6/16
+Ready 10/16
+Ready 4/16
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready 12/16
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    19.53ms   80.04ms   1.08s    98.29%
+    Req/Sec     1.16k   639.99     3.95k    67.56%
+  1251776 requests in 1.17m, 305.91GB read
+Requests/sec:  17810.59
+Transfer/sec:      4.35GB
+conns 65536 cores 8 fsize 262144,
+thread 1 created
+thread 2 created
+thread 3 created
+thread 4 created
+thread 5 created
+thread 6 created
+thread 7 created
+thread 8 created
+thread 9 created
+thread 10 created
+thread 11 created
+thread 12 created
+thread 13 created
+thread 14 created
+thread 15 created
+thread 16 created
+Running 1m test @ https://10.107.41.2
+  16 threads and 128 connections
+Ready 14/16
+Ready 7/16
+Ready 6/16
+Ready 3/16
+Ready 12/16
+Ready 1/16
+Ready 5/16
+Ready 10/16
+Ready 8/16
+Ready 2/16
+Ready 4/16
+Ready 15/16
+Ready 11/16
+Ready 9/16
+Ready 13/16
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready 0/16
+Ready all
+Ready all
+Ready all
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    19.92ms   81.34ms   1.07s    98.29%
+    Req/Sec     1.15k   626.08     4.43k    67.04%
+  1226741 requests in 1.18m, 299.80GB read
+Requests/sec:  17259.95
+Transfer/sec:      4.22GB
+conns 131072 cores 8 fsize 262144,
+thread 1 created
+thread 2 created
+thread 3 created
+thread 4 created
+thread 5 created
+thread 6 created
+thread 7 created
+thread 8 created
+thread 9 created
+thread 10 created
+thread 11 created
+thread 12 created
+thread 13 created
+thread 14 created
+thread 15 created
+thread 16 created
+Running 1m test @ https://10.107.41.2
+  16 threads and 128 connections
+Ready 9/16
+Ready 15/16
+Ready 11/16
+Ready 2/16
+Ready 13/16
+Ready 8/16
+Ready 12/16
+Ready 1/16
+Ready 5/16
+Ready 4/16
+Ready 14/16
+Ready 10/16
+Ready 6/16
+Ready 3/16
+Ready 0/16
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready 7/16
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    18.17ms   77.78ms   1.07s    98.42%
+    Req/Sec     1.16k   572.20     4.04k    68.22%
+  1262304 requests in 1.18m, 308.49GB read
+Requests/sec:  17893.93
+Transfer/sec:      4.37GB

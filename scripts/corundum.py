@@ -167,10 +167,11 @@ Usage:
   If `name` is given, it is appended to the filename of the output CSV files.
 
 ./scripts/corundum.py nginx_wrk --machine $MACHINE [--server_machine SERVER_MACHINE] (e.g. f01)
-  [--name NAME]
+  [--tx] [--name NAME]
   Run nginx test, assuming bitstream is programmed to the machine.
   Assumes that f00~f07 is registered on your ssh config.
   If `server_machine` is not given, it is defaulted to f00.
+  For tx tests, use the `--tx` flag.
   If `name` is given, it is appended to the filename of the output CSV files.
 
 ./scripts/corundum.py nginx_scale --machine $MACHINE [--server_machine SERVER_MACHINE] (e.g. f01)
@@ -440,6 +441,7 @@ parser.add_argument('--server_machine', help='machine that will act as server',
 parser.add_argument('--mtu')
 parser.add_argument('--duplex')
 parser.add_argument('--p')
+parser.add_argument('--tx', action='store_true')
 parser.add_argument('--tb_include', help='included tb modules')
 args = parser.parse_args()
 
@@ -469,8 +471,15 @@ elif mode in ['program', 'bench', 'bench_nic', 'bench_one', 'setup', 'fio', 'ngi
         machine_number = int(machine_name.strip(string.ascii_letters))
         if machine_name[0] == 'j':
             machine_number += 10
-        ip_from = f'10.{100+machine_number}.41.1'
-        ip_to   = f'10.{100+machine_number}.41.2'
+
+        if not args.tx:
+            ip_from = f'10.{100+machine_number}.41.1'
+            ip_to   = f'10.{100+machine_number}.41.2'
+        else:
+            machine_from = args.server_machine
+            machine_number_from = int(machine_from.strip(string.ascii_letters))
+            ip_from = f'10.{100+machine_number_from}.41.2'
+            ip_to   = f'10.{100+machine_number_from}.41.1'
 
 if mode in ['test_cocotb', 'program', 'program_per_module', 'port_info']:
     if not (shakeflow_dir / 'scripts/.temp').exists():
@@ -709,6 +718,7 @@ elif mode == 'program':
             fi
             git -C ~/corundum fetch origin
             git -C ~/corundum reset --hard
+            make -C ~/corundum/utils
         '''])
 
         # Program the FPGA with given bitstream.
@@ -824,13 +834,15 @@ elif mode == 'nginx_wrk':
     else:
         csv_name = f'wrk_{args.name}_{machine_name}_{now.strftime("%m%d_%H%M")}'
     
+    run(['scp', shakeflow_dir / 'scripts/nginx/nginx.conf', f'{machine_from}:~/autonomous-asplos21-artifact/TestSuite/Tests/nginx'])
     subprocess.run(['ssh', '-q', machine_to, 'sudo killall wrk'])
     fio_timeout = str(90)
     while True:
         csv_path = shakeflow_dir / f'scripts/{csv_name}_{iters}.csv'
         with open(csv_path, 'w') as f:
             for cores in [1, 8]:
-                for fsize in [4096, 16384, 65536, 262144, 1048576]:
+                for fsize in [4096, 16384, 65536, 262144, 1048576, 4194304, 16777216, 67108864]:
+                # for fsize in [1048576*4, 1048576*16, 1048576*64]:
                     subprocess.run(['ssh', '-q', machine_from, 'sudo killall nginx'])
                     if cores == 1:
                         affinity = "1"
@@ -1170,12 +1182,12 @@ elif mode == 'setup_nginx':
             git -C ~/autonomous-asplos21-artifact clone https://github.com/BorisPis/autonomous-asplos21-TestSuite.git
             mv ~/autonomous-asplos21-artifact/autonomous-asplos21-TestSuite ~/autonomous-asplos21-artifact/TestSuite
         fi
-        if [ ! -d ~/autonomous-asplos21-wrk ]; then
+        if [ ! -d ~/wrk ]; then
             git clone https://github.com/BorisPis/wrk.git
             git -C ~/wrk reset --hard e0f7b9d
             make -C ~/wrk
         fi
     '''])
-    run(['scp', shakeflow_dir / 'scripts/nginx/generate_files.sh', f'{machine_name}:~/autonomous-asplos21-artifact/TestSuite/Tests/nginx'])
+    run(['scp', shakeflow_dir / 'scripts/nginx/generate_files.sh', shakeflow_dir / 'scripts/nginx/generate_all_files.sh', f'{machine_name}:~/autonomous-asplos21-artifact/TestSuite/Tests/nginx'])
     run(['scp', shakeflow_dir / 'scripts/nginx/run_test.sh', f'{machine_name}:~/autonomous-asplos21-artifact/TestSuite/Tests/nginx'])
-    run(['ssh', machine_name, 'TBASE=~/autonomous-asplos21-artifact/TestSuite ~/autonomous-asplos21-artifact-temp/TestSuite/Tests/nginx/generate_all_files.sh'])
+    run(['ssh', machine_name, 'TBASE=~/autonomous-asplos21-artifact/TestSuite ~/autonomous-asplos21-artifact/TestSuite/Tests/nginx/generate_all_files.sh'])

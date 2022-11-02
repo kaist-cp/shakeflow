@@ -15,32 +15,32 @@ thread 13 created
 thread 14 created
 thread 15 created
 thread 16 created
-Running 1m test @ https://10.106.41.1
+Running 1m test @ https://10.107.41.1
   16 threads and 128 connections
-Ready 6/16
+Ready 0/16
+Ready 3/16
+Ready 2/16
+Ready 1/16
 Ready 5/16
 Ready 4/16
-Ready 0/16
-Ready 1/16
-Ready 2/16
-Ready 3/16
+Ready 6/16
 Ready 7/16
 Ready 8/16
 Ready 9/16
 Ready 10/16
 Ready 11/16
 Ready 12/16
-Ready 13/16
+Ready 14/16
 Ready 15/16
 Ready all
 Ready all
 Ready all
 Ready all
 Ready all
+Ready 13/16
 Ready all
 Ready all
 Ready all
-Ready 14/16
 Ready all
 Ready all
 Ready all
@@ -50,11 +50,11 @@ Ready all
 Ready all
 Ready all
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     2.34ms    7.16ms 218.30ms   99.50%
-    Req/Sec     4.02k   269.79    15.76k    82.34%
-  4452047 requests in 1.17m, 18.02GB read
-Requests/sec:  63520.14
-Transfer/sec:    263.21MB
+    Latency   208.88ms  313.87ms   2.03s    80.07%
+    Req/Sec     4.71k     7.29k   51.27k    90.46%
+  1882495 requests in 1.18m, 7.62GB read
+Requests/sec:  26499.57
+Transfer/sec:    109.81MB
 cores 1 fsize 16384,
 thread 1 created
 thread 2 created
@@ -72,25 +72,25 @@ thread 13 created
 thread 14 created
 thread 15 created
 thread 16 created
-Running 1m test @ https://10.106.41.1
+Running 1m test @ https://10.107.41.1
   16 threads and 128 connections
 Ready 2/16
-Ready 3/16
-Ready 0/16
-Ready 4/16
 Ready 1/16
-Ready 5/16
-Ready 6/16
-Ready 7/16
-Ready 8/16
+Ready 0/16
 Ready 9/16
-Ready 10/16
-Ready 11/16
+Ready 7/16
+Ready 6/16
 Ready 12/16
-Ready 15/16
+Ready 11/16
+Ready 8/16
+Ready 3/16
+Ready 10/16
+Ready 4/16
 Ready 13/16
 Ready 14/16
+Ready 15/16
 Ready all
+Ready 5/16
 Ready all
 Ready all
 Ready all
@@ -107,11 +107,11 @@ Ready all
 Ready all
 Ready all
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     2.95ms    5.77ms 226.01ms   99.57%
-    Req/Sec     2.91k   220.96    10.62k    82.23%
-  3228490 requests in 1.17m, 50.01GB read
-Requests/sec:  46056.58
-Transfer/sec:    730.62MB
+    Latency   209.64ms  313.99ms   2.05s    80.03%
+    Req/Sec     6.83k     8.17k   39.66k    84.62%
+  1968211 requests in 1.18m, 30.49GB read
+Requests/sec:  27740.26
+Transfer/sec:    440.06MB
 cores 1 fsize 65536,
 thread 1 created
 thread 2 created
@@ -129,45 +129,45 @@ thread 13 created
 thread 14 created
 thread 15 created
 thread 16 created
-Running 1m test @ https://10.106.41.1
+Running 1m test @ https://10.107.41.1
   16 threads and 128 connections
-Ready 3/16
-Ready 4/16
-Ready 0/16
 Ready 5/16
+Ready 0/16
 Ready 2/16
-Ready 1/16
-Ready 6/16
 Ready 7/16
+Ready 6/16
+Ready 4/16
 Ready 8/16
-Ready 10/16
 Ready 9/16
-Ready 11/16
 Ready 12/16
-Ready 15/16
 Ready 13/16
-Ready all
-Ready all
-Ready all
-Ready all
-Ready all
-Ready all
-Ready all
-Ready all
-Ready all
-Ready all
-Ready all
-Ready all
 Ready 14/16
+Ready 1/16
+Ready 10/16
+Ready 11/16
+Ready 3/16
+Ready 15/16
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
 Ready all
 Ready all
 Ready all
 Ready all
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     6.63ms    6.82ms 265.93ms   98.49%
-    Req/Sec     1.26k   122.96     2.69k    77.36%
-  1392307 requests in 1.17m, 85.31GB read
-Requests/sec:  19870.85
+    Latency   157.80ms  287.49ms   2.06s    82.86%
+    Req/Sec     2.50k     1.59k   19.53k    79.31%
+  1412833 requests in 1.18m, 86.56GB read
+Requests/sec:  19897.02
 Transfer/sec:      1.22GB
 cores 1 fsize 262144,
 thread 1 created
@@ -186,26 +186,26 @@ thread 13 created
 thread 14 created
 thread 15 created
 thread 16 created
-Running 1m test @ https://10.106.41.1
+Running 1m test @ https://10.107.41.1
   16 threads and 128 connections
-Ready 3/16
-Ready 1/16
 Ready 2/16
 Ready 0/16
-Ready 4/16
 Ready 5/16
 Ready 6/16
 Ready 7/16
-Ready 8/16
 Ready 9/16
-Ready 10/16
-Ready 11/16
-Ready 12/16
 Ready 13/16
-Ready 15/16
 Ready 14/16
+Ready 15/16
+Ready 12/16
+Ready 11/16
+Ready 8/16
+Ready 3/16
+Ready 10/16
+Ready 4/16
 Ready all
 Ready all
+Ready 1/16
 Ready all
 Ready all
 Ready all
@@ -221,11 +221,11 @@ Ready all
 Ready all
 Ready all
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency    21.94ms    6.09ms 271.10ms   98.36%
-    Req/Sec   367.44     29.18     1.51k    82.16%
-  407398 requests in 1.17m, 99.57GB read
-Requests/sec:   5811.90
-Transfer/sec:      1.42GB
+    Latency    51.01ms  149.87ms   2.07s    94.89%
+    Req/Sec   432.77     69.04     1.18k    87.61%
+  433892 requests in 1.18m, 106.04GB read
+Requests/sec:   6146.62
+Transfer/sec:      1.50GB
 cores 1 fsize 1048576,
 thread 1 created
 thread 2 created
@@ -243,26 +243,26 @@ thread 13 created
 thread 14 created
 thread 15 created
 thread 16 created
-Running 1m test @ https://10.106.41.1
+Running 1m test @ https://10.107.41.1
   16 threads and 128 connections
-Ready 6/16
-Ready 7/16
 Ready 4/16
-Ready 3/16
-Ready 2/16
 Ready 1/16
-Ready 5/16
-Ready 0/16
-Ready 8/16
+Ready 2/16
+Ready 3/16
 Ready 9/16
 Ready 10/16
 Ready 12/16
-Ready 11/16
-Ready 13/16
 Ready 14/16
+Ready 11/16
+Ready 6/16
 Ready 15/16
+Ready 7/16
+Ready 0/16
+Ready 5/16
+Ready 13/16
 Ready all
 Ready all
+Ready 8/16
 Ready all
 Ready all
 Ready all
@@ -278,11 +278,182 @@ Ready all
 Ready all
 Ready all
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency    84.17ms    8.71ms 359.28ms   98.30%
-    Req/Sec    95.28     13.52   161.00     54.55%
-  105901 requests in 1.17m, 103.50GB read
-Requests/sec:   1510.74
-Transfer/sec:      1.48GB
+    Latency    82.16ms   67.66ms   2.12s    99.01%
+    Req/Sec   104.75     18.37   525.00     75.36%
+  112111 requests in 1.17m, 109.56GB read
+Requests/sec:   1599.37
+Transfer/sec:      1.56GB
+cores 1 fsize 4194304,
+thread 1 created
+thread 2 created
+thread 3 created
+thread 4 created
+thread 5 created
+thread 6 created
+thread 7 created
+thread 8 created
+thread 9 created
+thread 10 created
+thread 11 created
+thread 12 created
+thread 13 created
+thread 14 created
+thread 15 created
+thread 16 created
+Running 1m test @ https://10.107.41.1
+  16 threads and 128 connections
+Ready 0/16
+Ready 1/16
+Ready 3/16
+Ready 2/16
+Ready 4/16
+Ready 5/16
+Ready 6/16
+Ready 7/16
+Ready 8/16
+Ready 9/16
+Ready 10/16
+Ready 11/16
+Ready 12/16
+Ready 13/16
+Ready 15/16
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready 14/16
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   303.99ms    6.42ms 388.00ms   76.83%
+    Req/Sec    28.81     17.69    70.00     59.55%
+  29227 requests in 1.17m, 114.43GB read
+Requests/sec:    416.94
+Transfer/sec:      1.63GB
+cores 1 fsize 16777216,
+thread 1 created
+thread 2 created
+thread 3 created
+thread 4 created
+thread 5 created
+thread 6 created
+thread 7 created
+thread 8 created
+thread 9 created
+thread 10 created
+thread 11 created
+thread 12 created
+thread 13 created
+thread 14 created
+thread 15 created
+thread 16 created
+Running 1m test @ https://10.107.41.1
+  16 threads and 128 connections
+Ready 2/16
+Ready 4/16
+Ready 1/16
+Ready 5/16
+Ready 0/16
+Ready 3/16
+Ready 6/16
+Ready 7/16
+Ready 8/16
+Ready 9/16
+Ready 10/16
+Ready 11/16
+Ready 13/16
+Ready 15/16
+Ready 12/16
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready 14/16
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.18s     9.28ms   1.21s    71.42%
+    Req/Sec    11.06     14.31    70.00     89.20%
+  7552 requests in 1.17m, 118.25GB read
+Requests/sec:    107.75
+Transfer/sec:      1.69GB
+cores 1 fsize 67108864,
+thread 1 created
+thread 2 created
+thread 3 created
+thread 4 created
+thread 5 created
+thread 6 created
+thread 7 created
+thread 8 created
+thread 9 created
+thread 10 created
+thread 11 created
+thread 12 created
+thread 13 created
+thread 14 created
+thread 15 created
+thread 16 created
+Running 1m test @ https://10.107.41.1
+  16 threads and 128 connections
+Ready 0/16
+Ready 1/16
+Ready 2/16
+Ready 3/16
+Ready 4/16
+Ready 5/16
+Ready 6/16
+Ready 7/16
+Ready 8/16
+Ready 9/16
+Ready 10/16
+Ready 11/16
+Ready 12/16
+Ready 15/16
+Ready 13/16
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready 14/16
+Ready all
+Ready all
+Ready all
+Ready all
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     4.55s    53.33ms   4.66s    73.33%
+    Req/Sec     5.99     13.44    70.00     86.71%
+  1920 requests in 1.17m, 122.49GB read
+Requests/sec:     27.39
+Transfer/sec:      1.75GB
 cores 8 fsize 4096,
 thread 1 created
 thread 2 created
@@ -300,28 +471,28 @@ thread 13 created
 thread 14 created
 thread 15 created
 thread 16 created
-Running 1m test @ https://10.106.41.1
+Running 1m test @ https://10.107.41.1
   16 threads and 128 connections
-Ready 0/16
-Ready 5/16
-Ready 7/16
 Ready 10/16
-Ready 8/16
-Ready 11/16
-Ready 9/16
-Ready 2/16
-Ready 6/16
-Ready 4/16
-Ready 12/16
-Ready 15/16
-Ready 3/16
-Ready 14/16
 Ready 1/16
-Ready all
-Ready all
-Ready all
-Ready all
+Ready 7/16
+Ready 3/16
+Ready 0/16
+Ready 14/16
+Ready 9/16
+Ready 5/16
+Ready 12/16
 Ready 13/16
+Ready 15/16
+Ready 2/16
+Ready 11/16
+Ready 8/16
+Ready 4/16
+Ready 6/16
+Ready all
+Ready all
+Ready all
+Ready all
 Ready all
 Ready all
 Ready all
@@ -335,11 +506,11 @@ Ready all
 Ready all
 Ready all
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     1.27ms   20.25ms   1.03s    99.72%
-    Req/Sec    15.66k     2.53k   25.54k    69.28%
-  17391908 requests in 1.17m, 70.38GB read
-Requests/sec: 248106.73
-Transfer/sec:      1.00GB
+    Latency   216.27ms  316.59ms   2.03s    79.76%
+    Req/Sec     5.31k    10.48k   64.29k    88.29%
+  1951377 requests in 1.18m, 7.90GB read
+Requests/sec:  27497.65
+Transfer/sec:    113.94MB
 cores 8 fsize 16384,
 thread 1 created
 thread 2 created
@@ -357,23 +528,24 @@ thread 13 created
 thread 14 created
 thread 15 created
 thread 16 created
-Running 1m test @ https://10.106.41.1
+Running 1m test @ https://10.107.41.1
   16 threads and 128 connections
-Ready 6/16
+Ready 9/16
+Ready 7/16
 Ready 3/16
+Ready 10/16
 Ready 15/16
+Ready 4/16
 Ready 11/16
 Ready 2/16
-Ready 0/16
-Ready 5/16
-Ready 1/16
-Ready 7/16
-Ready 10/16
 Ready 14/16
 Ready 12/16
 Ready 13/16
-Ready 4/16
-Ready 9/16
+Ready 0/16
+Ready 5/16
+Ready 1/16
+Ready 6/16
+Ready all
 Ready 8/16
 Ready all
 Ready all
@@ -390,13 +562,12 @@ Ready all
 Ready all
 Ready all
 Ready all
-Ready all
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency   813.59us    1.30ms  44.26ms   96.24%
-    Req/Sec    11.08k     1.63k   19.16k    69.95%
-  12331378 requests in 1.17m, 191.03GB read
-Requests/sec: 175918.87
-Transfer/sec:      2.73GB
+    Latency   213.14ms  315.64ms   2.03s    79.90%
+    Req/Sec     9.41k    14.33k   47.08k    77.13%
+  2506238 requests in 1.18m, 38.83GB read
+Requests/sec:  35353.43
+Transfer/sec:    560.83MB
 cores 8 fsize 65536,
 thread 1 created
 thread 2 created
@@ -414,29 +585,29 @@ thread 13 created
 thread 14 created
 thread 15 created
 thread 16 created
-Running 1m test @ https://10.106.41.1
+Running 1m test @ https://10.107.41.1
   16 threads and 128 connections
 Ready 13/16
-Ready 1/16
-Ready 5/16
-Ready 0/16
-Ready 9/16
-Ready 11/16
-Ready 2/16
 Ready 3/16
-Ready 14/16
+Ready 5/16
 Ready 10/16
-Ready 8/16
+Ready 0/16
+Ready 2/16
+Ready 15/16
 Ready 7/16
+Ready 11/16
 Ready 6/16
 Ready 12/16
-Ready 15/16
-Ready all
-Ready all
-Ready all
-Ready all
-Ready all
+Ready 8/16
 Ready 4/16
+Ready 1/16
+Ready 14/16
+Ready all
+Ready all
+Ready all
+Ready 9/16
+Ready all
+Ready all
 Ready all
 Ready all
 Ready all
@@ -449,11 +620,11 @@ Ready all
 Ready all
 Ready all
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     1.76ms    2.00ms 208.18ms   91.46%
-    Req/Sec     4.97k     0.92k   10.84k    67.90%
-  5523090 requests in 1.17m, 338.40GB read
-Requests/sec:  78811.01
-Transfer/sec:      4.83GB
+    Latency   192.26ms  305.79ms   1.05s    80.74%
+    Req/Sec     9.68k     6.67k   26.21k    55.20%
+  3346773 requests in 1.18m, 205.05GB read
+Requests/sec:  47160.34
+Transfer/sec:      2.89GB
 cores 8 fsize 262144,
 thread 1 created
 thread 2 created
@@ -471,46 +642,46 @@ thread 13 created
 thread 14 created
 thread 15 created
 thread 16 created
-Running 1m test @ https://10.106.41.1
+Running 1m test @ https://10.107.41.1
   16 threads and 128 connections
-Ready 6/16
-Ready 1/16
-Ready 9/16
-Ready 13/16
-Ready 4/16
-Ready 0/16
-Ready 2/16
-Ready 14/16
-Ready 3/16
-Ready 10/16
-Ready 12/16
-Ready 11/16
-Ready 15/16
-Ready 8/16
-Ready 5/16
-Ready all
-Ready all
-Ready all
-Ready all
-Ready all
-Ready all
-Ready all
-Ready all
-Ready all
-Ready all
-Ready all
 Ready 7/16
+Ready 11/16
+Ready 5/16
+Ready 2/16
+Ready 4/16
+Ready 14/16
+Ready 6/16
+Ready 13/16
+Ready 8/16
+Ready 9/16
+Ready 1/16
+Ready 3/16
+Ready 0/16
+Ready 12/16
+Ready 15/16
+Ready all
+Ready 10/16
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
 Ready all
 Ready all
 Ready all
 Ready all
 Ready all
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     6.11ms    4.97ms 225.46ms   86.93%
-    Req/Sec     1.37k   458.54     3.24k    66.99%
-  1520619 requests in 1.17m, 371.61GB read
-Requests/sec:  21695.29
-Transfer/sec:      5.30GB
+    Latency    53.24ms  174.30ms   1.22s    92.65%
+    Req/Sec     1.55k   626.90     4.43k    67.82%
+  1493111 requests in 1.17m, 364.89GB read
+Requests/sec:  21299.96
+Transfer/sec:      5.21GB
 cores 8 fsize 1048576,
 thread 1 created
 thread 2 created
@@ -528,31 +699,31 @@ thread 13 created
 thread 14 created
 thread 15 created
 thread 16 created
-Running 1m test @ https://10.106.41.1
+Running 1m test @ https://10.107.41.1
   16 threads and 128 connections
-Ready 9/16
+Ready 10/16
 Ready 1/16
+Ready 14/16
+Ready 5/16
+Ready 8/16
+Ready 3/16
+Ready 4/16
+Ready 7/16
+Ready 2/16
 Ready 11/16
 Ready 0/16
-Ready 10/16
-Ready 12/16
-Ready 2/16
-Ready 4/16
-Ready 15/16
-Ready 13/16
-Ready 5/16
-Ready 3/16
-Ready 7/16
+Ready 9/16
 Ready 6/16
-Ready 14/16
+Ready 12/16
+Ready 13/16
+Ready all
+Ready all
+Ready 15/16
 Ready all
 Ready all
 Ready all
 Ready all
 Ready all
-Ready all
-Ready all
-Ready 8/16
 Ready all
 Ready all
 Ready all
@@ -563,8 +734,179 @@ Ready all
 Ready all
 Ready all
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency    22.84ms   11.05ms 251.44ms   75.75%
-    Req/Sec   351.80    122.45     0.95k    68.84%
-  390583 requests in 1.17m, 381.58GB read
-Requests/sec:   5571.85
+    Latency    23.83ms   20.31ms   1.05s    93.11%
+    Req/Sec   345.05    139.06     0.91k    69.37%
+  382753 requests in 1.17m, 373.93GB read
+Requests/sec:   5460.71
+Transfer/sec:      5.33GB
+cores 8 fsize 4194304,
+thread 1 created
+thread 2 created
+thread 3 created
+thread 4 created
+thread 5 created
+thread 6 created
+thread 7 created
+thread 8 created
+thread 9 created
+thread 10 created
+thread 11 created
+thread 12 created
+thread 13 created
+thread 14 created
+thread 15 created
+thread 16 created
+Running 1m test @ https://10.107.41.1
+  16 threads and 128 connections
+Ready 13/16
+Ready 0/16
+Ready 10/16
+Ready 4/16
+Ready 3/16
+Ready 9/16
+Ready 8/16
+Ready 1/16
+Ready 5/16
+Ready 2/16
+Ready 7/16
+Ready 11/16
+Ready 6/16
+Ready 14/16
+Ready 12/16
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready 15/16
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    91.96ms   39.51ms 352.27ms   69.84%
+    Req/Sec    87.72     37.93   323.00     68.69%
+  97471 requests in 1.17m, 381.02GB read
+Requests/sec:   1390.71
 Transfer/sec:      5.44GB
+cores 8 fsize 16777216,
+thread 1 created
+thread 2 created
+thread 3 created
+thread 4 created
+thread 5 created
+thread 6 created
+thread 7 created
+thread 8 created
+thread 9 created
+thread 10 created
+thread 11 created
+thread 12 created
+thread 13 created
+thread 14 created
+thread 15 created
+thread 16 created
+Running 1m test @ https://10.107.41.1
+  16 threads and 128 connections
+Ready 0/16
+Ready 1/16
+Ready 9/16
+Ready 8/16
+Ready 4/16
+Ready 10/16
+Ready 15/16
+Ready 3/16
+Ready 5/16
+Ready 14/16
+Ready 11/16
+Ready 6/16
+Ready 7/16
+Ready 13/16
+Ready 2/16
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready 12/16
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   366.88ms  123.86ms   1.17s    68.73%
+    Req/Sec    24.67     16.76    80.00     78.37%
+  24365 requests in 1.17m, 381.67GB read
+Requests/sec:    347.59
+Transfer/sec:      5.44GB
+cores 8 fsize 67108864,
+thread 1 created
+thread 2 created
+thread 3 created
+thread 4 created
+thread 5 created
+thread 6 created
+thread 7 created
+thread 8 created
+thread 9 created
+thread 10 created
+thread 11 created
+thread 12 created
+thread 13 created
+thread 14 created
+thread 15 created
+thread 16 created
+Running 1m test @ https://10.107.41.1
+  16 threads and 128 connections
+Ready 4/16
+Ready 9/16
+Ready 10/16
+Ready 1/16
+Ready 15/16
+Ready 5/16
+Ready 0/16
+Ready 2/16
+Ready 14/16
+Ready 12/16
+Ready 7/16
+Ready 8/16
+Ready 3/16
+Ready 6/16
+Ready 13/16
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready 11/16
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+Ready all
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.48s   360.22ms   2.82s    71.93%
+    Req/Sec    17.06     20.14    70.00     82.11%
+  5992 requests in 1.17m, 377.98GB read
+Requests/sec:     85.49
+Transfer/sec:      5.39GB

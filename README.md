@@ -65,11 +65,11 @@ This artifact aims to achieve the following goals:
 
 ## G2: Locations of the Submodules of Corundum's `tx_checksum` (Figure 9)
 
-An overview of the `tx_checksum` module is presented in below figure.
+An overview of the `tx_checksum` module is presented in the figure below.
 
 ![](img/tx_checksum.svg)
 
-For each submodule in the figure, corresponding lines in the ShakeFlow are as follows.
+For each submodule in the figure, corresponding lines in ShakeFlow are as follows.
 
 No. | Submodule (Lines in [tx_checksum.rs](shakeflow-corundum/src/tx_checksum.rs)) | Description
 --- | --- | ---
@@ -170,7 +170,9 @@ We ported [Corundum](https://github.com/corundum/corundum)'s core packet process
 ### Software Requirement
 
 - Vivado 2021.1
-- FPGA development environment for Corundum described in the [Corundum documentation](https://docs.corundum.io/en/latest/gettingstarted.html).
+- FPGA development and build environment for Corundum described in the [Corundum documentation](https://docs.corundum.io/en/latest/gettingstarted.html).
+
+  + UltraScale Integrated 100G Ethernet Subsystem license is required. Instructions on how to obtain the license is specified in the Corundum documentation.
 
 
 ### Simulation Test
@@ -281,7 +283,9 @@ We explain how to generate the following figures (Section 6):
 ### Software Requirement
 
 - Vivado 2021.1
-- FPGA development environment for Corundum described in the [Corundum documentation](https://docs.corundum.io/en/latest/gettingstarted.html).
+- FPGA development and build environment for Corundum described in the [Corundum documentation](https://docs.corundum.io/en/latest/gettingstarted.html).
+
+  + UltraScale Integrated 100G Ethernet Subsystem license is required. Instructions on how to obtain the license is specified in the Corundum documentation.
 
 ### Hardware Requirement
 
@@ -451,28 +455,26 @@ For evaluation on `M`:
 #### G6: Throughput of NICs for Remote File Read Workload (fio, Figure 13)
 
 ```shell
-# For tx
-./scripts/corundum.py fio --machine $MACHINE --server_machine $SERVER_MACHINE # --name $NAME_THAT_WILL_BE_APPENDED
 # For rx
-./scripts/corundum.py fio --machine $SERVER_MACHINE --server_machine $MACHINE # --name $NAME_THAT_WILL_BE_APPENDED
+./scripts/corundum.py fio --machine $MACHINE --server_machine $SERVER_MACHINE # --name $NAME_THAT_WILL_BE_APPENDED
+# For tx
+./scripts/corundum.py fio --machine $SERVER_MACHINE --server_machine $MACHINE --tx # --name $NAME_THAT_WILL_BE_APPENDED
 ```
 
 #### G7: Throughput of NICs for Web Server and Client Workload (Figure 14)
 
 ```shell
-# For tx
-./scripts/corundum.py nginx_wrk --machine $MACHINE --server_machine $SERVER_MACHINE # --name $NAME_THAT_WILL_BE_APPENDED
 # For rx
-./scripts/corundum.py nginx_wrk --machine $SERVER_MACHINE --server_machine $MACHINE # --name $NAME_THAT_WILL_BE_APPENDED
+./scripts/corundum.py nginx_wrk --machine $MACHINE --server_machine $SERVER_MACHINE # --name $NAME_THAT_WILL_BE_APPENDED
+# For tx
+./scripts/corundum.py nginx_wrk --machine $SERVER_MACHINE --server_machine $MACHINE --tx # --name $NAME_THAT_WILL_BE_APPENDED
 ```
 
 #### G8: Scalability of NICs for Web Server Workload (Figure 15)
 
 ```shell
-# For tx
-./scripts/corundum.py nginx_scale --machine $MACHINE --server_machine $SERVER_MACHINE # --name $NAME_THAT_WILL_BE_APPENDED
-# For rx
-./scripts/corundum.py nginx_scale --machine $SERVER_MACHINE --server_machine $MACHINE # --name $NAME_THAT_WILL_BE_APPENDED
+# tx figure only, as server transfers files to the client.
+./scripts/corundum.py nginx_scale --machine $SERVER_MACHINE --server_machine $MACHINE --tx # --name $NAME_THAT_WILL_BE_APPENDED
 ```
 
 ### Step 6: Figures
@@ -494,6 +496,8 @@ scripts/csvs/$EXPERIMENT/$DIRECTION
 if the experiment is one of `fio` or `nginx_wrk`.
 `$DIRECTION` should be either `rx` or `tx`. 
 Data from the Mellanox experiments (i.e. **M**) should be placed in the `rx` directory.
+
+CSV result files from **C_orig**, **C_SF**, **M** experiments should be named `corig*.csv`, `csf*.csv`, `m*.csv` respectively, e.g., `corig1.csv` ~ `corig10.csv`.
 
 Then run
 

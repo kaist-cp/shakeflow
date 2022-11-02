@@ -8,12 +8,16 @@ import numpy as np
 import scipy.stats
 import os
 
-COR_TX = "$\\mathbf{C_{Orig}}$ TX"
-COR_RX = "$\\mathbf{C_{Orig}}$ RX"
-SF_TX = "$\\mathbf{C_{SF}}$ TX"
-SF_RX = "$\\mathbf{C_{SF}}$ RX"
-MEL_TX = "$\\mathbf{M}$ TX"
-MEL_RX = "$\\mathbf{M}$ RX"
+COR = "$\\mathbf{C_{Orig}}$"
+SF = "$\\mathbf{C_{SF}}$"
+MEL = "$\\mathbf{M}$"
+
+# COR_TX = "$\\mathbf{C_{Orig}}$ TX"
+# COR_RX = "$\\mathbf{C_{Orig}}$ RX"
+# SF_TX = "$\\mathbf{C_{SF}}$ TX"
+# SF_RX = "$\\mathbf{C_{SF}}$ RX"
+# MEL_TX = "$\\mathbf{M}$ TX"
+# MEL_RX = "$\\mathbf{M}$ RX"
 
 d = {i: [] for i in range(1, 8+1)}
 d = {'half': copy.deepcopy(d), 'full': copy.deepcopy(d)}
@@ -42,7 +46,6 @@ for n in pathlist:
         if len(lines) != 22:
             continue
 
-        # Excuse the code, it's 52 hrs until due
         for row_offset in [0, 11]:
             mtu = int(lines[row_offset][0][4:])
             for i in range(8):
@@ -97,16 +100,16 @@ def pred(d, target, mtu, direction, duplex, i):
 
 for duplex in ['half', 'full']:
     for mtu in [1500, 9000]:
-        with open(f'{current_dir}/{duplex}_{mtu}.csv', 'w') as f:
-            f.write(f'parallel connections\ttype\tspeed\n')
-            for target in ['sf', 'cor', 'mel']:
-                for direction in ['tx', 'rx']:
+        for direction in ['tx', 'rx']:
+            with open(f'{current_dir}/{duplex}_{mtu}_{direction}.csv', 'w') as f:
+                f.write(f'parallel connections\ttype\tspeed\n')
+                for target in ['sf', 'cor', 'mel']:
                     if target == 'sf':
-                        typ = SF_TX if direction == 'tx' else SF_RX
+                        typ = SF
                     if target == 'cor':
-                        typ = COR_TX if direction == 'tx' else COR_RX
+                        typ = COR
                     if target == 'mel':
-                        typ = MEL_TX if direction == 'tx' else MEL_RX
+                        typ = MEL
                     for i in range(1,9):
                         avg, std = pred(d, target, mtu, direction, duplex, i)
                         for b in d[target][mtu][direction][duplex][i]:

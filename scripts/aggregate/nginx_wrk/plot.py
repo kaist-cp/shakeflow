@@ -49,6 +49,6 @@ for di in ['rx', 'tx']:
 
         plt.legend(loc='lower right')
         plt.tight_layout()
-        output_name = f'figure-nginx-{core}core'
+        output_name = f'figure-nginx-{core}core-{"server" if di == "tx" else "client"}'
         # plt.savefig(f'{current_dir}/{output_name}.png')
         plt.savefig(f'{current_dir}/{output_name}.svg')
