@@ -8,6 +8,8 @@ use arrayvec::ArrayVec;
 pub const fn clog2(value: usize) -> usize {
     if value == 0 {
         0
+    } else if value == 1 {
+        1
     } else {
         (::std::mem::size_of::<usize>() * 8) - (value - 1).leading_zeros() as usize
     }
