@@ -112,10 +112,10 @@ No. | Module | LOC (Original) | LOC (ShakeFlow) | LOC (Generated Verilog)
 10 | rx_engine ([Original](https://github.com/corundum/corundum/blob/45b7e35/fpga/common/rtl/rx_engine.v), [ShakeFlow](shakeflow-corundum/src/rx_engine.rs)) | 639 | 464 | 1265
 11 | tx_engine ([Original](https://github.com/corundum/corundum/blob/45b7e35/fpga/common/rtl/tx_engine.v), [ShakeFlow](shakeflow-corundum/src/tx_engine.rs)) | 641 | 498 | 1425
 12 | queue_manager ([ShakeFlow](shakeflow-corundum/src/queue_manager.rs)) |  | 115 | 
-13 | fetch_queue_manager ([Original](https://github.com/corundum/corundum/blob/45b7e35/fpga/common/rtl/queue_manager.v), [ShakeFlow](shakeflow-corundum/src/queue_manager.rs)) | 491 | 219 | 1316
+13 | fetch_queue_manager ([Original](https://github.com/corundum/corundum/blob/45b7e35/fpga/common/rtl/queue_manager.v), [ShakeFlow](shakeflow-corundum/src/queue_manager.rs)) | 491 | 219 | 1862
 14 | cpl_queue_manager ([Original](https://github.com/corundum/corundum/blob/45b7e35/fpga/common/rtl/cpl_queue_manager.v), [ShakeFlow](shakeflow-corundum/src/cpl_queue_manager.rs)) | 512 | 250 | 1984
 15 | tx_scheduler_rr ([Original](https://github.com/corundum/corundum/blob/45b7e35/fpga/common/rtl/tx_scheduler_rr.v), [ShakeFlow](shakeflow-corundum/src/tx_scheduler_rr.rs)) | 630 | 498 | 2020
-| | (total) | 5117 | 3791 | 15873 | 
+| | (total) | 5117 | 3791 | 16419 |
 
 ### SLOC of Ported BaseJump STL modules
 
@@ -139,12 +139,6 @@ To generate the Verilog code for the FIR filter (Section 2):
 
 ```
 cargo run --bin shakeflow-examples
-```
-
-To generate the Verilog code for the ShakeFlow standard library (Section 5):
-
-```
-cargo run --bin shakeflow-std
 ```
 
 To generate the Verilog code for our ShakeFlow port of Corundum (Section 5):
