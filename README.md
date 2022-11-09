@@ -166,6 +166,12 @@ We ported [Corundum](https://github.com/corundum/corundum)'s core packet process
 - Vivado 2021.1
 - FPGA development and build environment for Corundum described in the [Corundum documentation](https://docs.corundum.io/en/latest/gettingstarted.html).
 
+  + In particular, you should install the 0.1.22 version of the `cocotbext-pcie` package using the following command.
+
+    ```shell
+    pip install -Iv cocotbext-pcie==0.1.22
+    ```
+
   + UltraScale Integrated 100G Ethernet Subsystem license is required. Instructions on how to obtain the license is specified in the Corundum documentation.
 
 
